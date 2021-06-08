@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Evasion{% endblock %}
+
+{% block body %}
+<div class="container">
+<ul>
+{% for oneDestination in items %}
+    <li>
+    <h2> {{ oneDestination.city }} </h2>
+    <h3> {{ oneDestination.country }} </h3>
+    <p>{{ oneDestination.description }}</p>
+    <p>{{ oneDestination.author_id|default('Anonyme') }}</p>
+    <p>{{ oneDestination.imgURL }}</p>
+    </li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 1030px) {
+    .nav {
+        padding-left: 0 !important;
+        }
+
+        .tile{
+            width: 358px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+     .col-md-4{
+         padding-left: 10px !important;
+     }
+
+     .row {
+         margin-left: auto !important;
+         margin-right: auto !important;
+     }
+
+  }
