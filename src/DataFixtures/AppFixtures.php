@@ -34,7 +34,7 @@ class AppFixtures extends Fixture
                 $oneDestination = new Destination();
                 $oneDestination->setCity("Bali $j");
                 $oneDestination->setCountry("Indonésie $j");
-                $oneDestination->setDescription("Bali est une île du Sud de l'Indonésie située entre les îles de Java et de Lombok </br>
+                $oneDestination->setDescription("Bali est une île du Sud de l'Indonésie située entre les îles de Java et de Lombok
                 Lieux importants :   Sanur (Plages conviviales, temple Pura Blanjong), Pura Luhur Uluwatu (Temple hindou historique, vue sur océan)");
                 $oneDestination->setImgURL("blabla.com $j");
                 $oneDestination->setAuthor($simpleUser);

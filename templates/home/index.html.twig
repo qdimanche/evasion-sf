@@ -6,13 +6,31 @@
 <div class="container">
 <ul>
 {% for oneDestination in items %}
-    <li>
+    {# <li>
     <h2> {{ oneDestination.city }} </h2>
     <h3> {{ oneDestination.country }} </h3>
     <p>{{ oneDestination.description }}</p>
     <p>{{ oneDestination.author_id|default('Anonyme') }}</p>
     <p>{{ oneDestination.imgURL }}</p>
-    </li>
+    </li> #}
+                <div class="col-lg-4 col-sm-0">
+                <div class="tile">
+
+                    <div class="text">
+                        <h2> {{ oneDestination.city }} </h2>
+                        <h3 class="animate-text">{{ oneDestination.country }} 
+                        </h3>
+                        <p class="animate-text">{{ oneDestination.description }} </p>
+                        <p class="animate-text">{{ oneDestination.author_id|default('Anonyme') }} </p>
+                        <p class="animate-text">{{ oneDestination.imgURL }} </p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 {% endfor %}
 </ul>
 </div>
